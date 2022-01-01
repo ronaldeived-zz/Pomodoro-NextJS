@@ -1,24 +1,103 @@
-.container {
-  padding: 0 2rem;
+.header {
+  background: #F0F3F3;
+  text-align: center;
+  padding: 20px 0 0;
+}
+.header h1 {
+  margin: 0 auto;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.mainPomodoro {
+  background: #f9a7ad;
+  padding: 50px 0;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #f4505c;
+  border-radius: 15px;
+}
+
+.mainPomodoro ul {
+  list-style: none;
+  
+}
+
+.mainPomodoro li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  padding: 10px 20px;
+  margin: 0 1.5%;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.mainPomodoro span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainPomodoro li:hover {
+  background: #f1202f;
+  color: white;
+}
+
+.timer {
+  padding: 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timer div{
+  display: inline-block;
+  color: #000000;
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.btnGroup{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btnGroup button {
+  width: 12em;
+  height: 5em;
+  margin: 0 20px;
+  background: initial;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+.btnGroup span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btnGroup button:hover {
+  background: #f1202f;
+  color: white;
+}
+
+
+.main {
+  min-height: 91vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F0F3F3;
 }
 
 .footer {
+  background: #F0F3F3;
   display: flex;
+  max-height: 2em;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  padding: 0 auto 10px;
 }
 
 .footer a {
@@ -26,81 +105,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {
